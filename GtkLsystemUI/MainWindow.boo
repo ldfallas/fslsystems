@@ -5,7 +5,7 @@ import Gtk
 class MainWindow(Window):
 	def constructor(title as string):
 		super(title)
-		SetDefaultSize(400, 300)
+		SetDefaultSize(500, 500)
 		dt = GtkLsystemUI.DrawingWidget()
 		scrolledWindow = ScrolledWindow ()
 		scrolledWindow.SetSizeRequest(200,200)
@@ -14,8 +14,14 @@ class MainWindow(Window):
 
 		b = VBox(true,5)
 		b.PackStart(scrolledWindow,true,true,1)
-		bt = Button("ok")
 		
-		b.PackStart(bt,false,false,1)
+		notebook = Notebook()
+		
+		notebook.AppendPage(Button("A"),Label("Draw"))
+		notebook.AppendPage(Button("A"),Label("Rules"))
+		notebook.AppendPage(Button("A"),Label("Axiom"))
+
+		bt = Button("ok")		
+		b.PackStart(notebook,false,false,1)
 		self.Add( b)
 		DeleteEvent += { Application.Quit() }
