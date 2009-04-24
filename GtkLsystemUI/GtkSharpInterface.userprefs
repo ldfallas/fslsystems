@@ -1,0 +1,27 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" ctype="Workspace" />
+  <MonoDevelop.Ide.DebuggingService>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService>
+  <MonoDevelop.Ide.Workbench ActiveDocument="MainWindow.boo" ctype="Workbench">
+    <Files>
+      <File FileName="Welcome" />
+      <File FileName="Main.boo" Line="1" Column="23" />
+      <File FileName="MainWindow.boo" Line="9" Column="20" />
+      <File FileName="DrawingWidget.boo" Line="1" Column="23" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="GtkSharpInterface" expanded="True">
+            <Node name="References" expanded="True" />
+            <Node name="MainWindow.boo" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

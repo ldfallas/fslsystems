@@ -1,0 +1,21 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{B3672514-7503-4B01-B4B4-B44E87061EA2}") = "GtkSharpInterface", "GtkSharpInterface.booproj", "{4AC2C0F2-F1C2-4195-A639-506197EC2A2E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4AC2C0F2-F1C2-4195-A639-506197EC2A2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4AC2C0F2-F1C2-4195-A639-506197EC2A2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4AC2C0F2-F1C2-4195-A639-506197EC2A2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4AC2C0F2-F1C2-4195-A639-506197EC2A2E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		name = GtkSharpInterface
+		StartupItem = GtkSharpInterface.booproj
+	EndGlobalSection
+EndGlobal
