@@ -3,6 +3,10 @@ import System
 import Gtk
 
 class MainWindow(Window):
+
+   axiomBuffer as TextBuffer
+   rulesBuffer as TextBuffer 
+
    def constructor(title as string):
       super(title)
       SetDefaultSize(500, 500)
@@ -18,8 +22,14 @@ class MainWindow(Window):
       notebook = Notebook()
       
       notebook.AppendPage(CreateDrawTab(),Label("Draw"))
-      notebook.AppendPage(Button("A"),Label("Rules"))
-      notebook.AppendPage(Button("A"),Label("Axiom"))
+
+
+      rulesTv = TextView()
+      axiomTv = TextView()
+
+      
+      notebook.AppendPage(rulesTv,Label("Rules"))
+      notebook.AppendPage(axiomTv,Label("Axiom"))
 
       bt = Button("ok")      
       b.PackStart(notebook,false,false,1)
@@ -28,6 +38,7 @@ class MainWindow(Window):
 
   def CreateDrawTab():
      table = Table(3,4,false)
+               
      table.Attach(Label("Color"),0,1,0,1)
      table.Attach(TextView(),1,2,0,1)
 
